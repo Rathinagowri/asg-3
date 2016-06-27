@@ -1,0 +1,29 @@
+<HTML>
+    <HEAD>
+   <SCRIPT language=Javascript>
+      <!--
+      function isNumberKey(evt)
+      {
+ 
+         var charCode = (evt.which) ? evt.which : event.keyCode
+
+       if (charCode > 31 && (charCode < 48 || charCode > 57))
+{document.myform.txtChar.style="background-color:red;"
+             return false;
+}
+
+return true;
+
+
+      }
+      //-->
+   </SCRIPT>
+   </HEAD>
+<BODY>
+<form name = "myform">
+      <INPUT id="txtChar" onkeypress="return isNumberKey(event);" type="text" name="txtChar">
+
+</form>
+   </BODY>
+
+</HTML>
